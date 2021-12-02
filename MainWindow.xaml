@@ -1,0 +1,270 @@
+﻿<Window x:Class="WpfL1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfL1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="461.856" Width="460" Foreground="#FFAE9A9A" MinWidth="460" MinHeight="540">
+    <Grid x:Name="Калькулятор" Width="395" MinWidth="395" MinHeight="430" Margin="0" Height="450">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFE8E7E7" Offset="1"/>
+                <GradientStop Color="#FFF7F7F7"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <TextBox TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FFBDC7DC" Padding="10" BorderThickness="1" UseLayoutRounding="False" FontSize="36" TextAlignment="Right" SelectionBrush="#FFBACCDA" Height="80" Width="375" HorizontalAlignment="Left" Margin="10,50,0,0" FontFamily="Century Gothic" FontWeight="Bold" Cursor="Arrow" CaretBrush="#FF43B0D8" OpacityMask="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3"/>
+                </Style>
+            </TextBox.Resources>
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0,1" MappingMode="RelativeToBoundingBox" StartPoint="0,0">
+                    <GradientStop Color="#FFECE7E7" Offset="1"/>
+                    <GradientStop Color="White"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <Button Content="1" Height="60" Margin="10,150,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Century Gothic" HorizontalAlignment="Left" Width="90">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE2DFDF" Offset="1"/>
+                    <GradientStop Color="White"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="2" HorizontalAlignment="Left" Height="60" Margin="105,150,0,0" VerticalAlignment="Top" Width="90" FontSize="24" FontFamily="Century Gothic">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3"/>
+                </Style>
+            </Button.Resources>
+
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE2DFDF" Offset="1"/>
+                    <GradientStop Color="White"/>
+                </LinearGradientBrush>
+            </Button.Background>
+
+        </Button>
+        <Button Content="3" HorizontalAlignment="Left" Height="60" Margin="200,150,0,0" VerticalAlignment="Top" Width="90" FontSize="24" FontFamily="Century Gothic">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3"/>
+                </Style>
+            </Button.Resources>
+
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE2DFDF" Offset="1"/>
+                    <GradientStop Color="White"/>
+                </LinearGradientBrush>
+            </Button.Background>
+
+        </Button>
+        <Button Content="+" Height="60" Margin="295,150,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Century Gothic" HorizontalAlignment="Left" Width="90">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3"/>
+                </Style>
+            </Button.Resources>
+
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE2DFDF" Offset="1"/>
+                    <GradientStop Color="White"/>
+                </LinearGradientBrush>
+            </Button.Background>
+
+        </Button>
+        <Button Content="4" HorizontalAlignment="Left" Height="60" Margin="10,215,0,0" VerticalAlignment="Top" Width="90" FontSize="24" FontFamily="Century Gothic">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3"/>
+                </Style>
+            </Button.Resources>
+
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE2DFDF" Offset="1"/>
+                    <GradientStop Color="White"/>
+                </LinearGradientBrush>
+            </Button.Background>
+
+        </Button>
+        <Button Content="5" HorizontalAlignment="Left" Height="60" Margin="105,215,0,0" VerticalAlignment="Top" Width="90" FontSize="24" FontFamily="Century Gothic">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3"/>
+                </Style>
+            </Button.Resources>
+
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE2DFDF" Offset="1"/>
+                    <GradientStop Color="White"/>
+                </LinearGradientBrush>
+            </Button.Background>
+
+        </Button>
+        <Button Content="6" HorizontalAlignment="Left" Height="60" Margin="200,215,0,0" VerticalAlignment="Top" Width="90" FontSize="24" FontFamily="Century Gothic">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3"/>
+                </Style>
+            </Button.Resources>
+
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE2DFDF" Offset="1"/>
+                    <GradientStop Color="White"/>
+                </LinearGradientBrush>
+            </Button.Background>
+
+        </Button>
+        <Button Content="-" HorizontalAlignment="Left" Height="60" Margin="295,215,0,0" VerticalAlignment="Top" Width="90" FontSize="24" FontFamily="Century Gothic">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3"/>
+                </Style>
+            </Button.Resources>
+
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE2DFDF" Offset="1"/>
+                    <GradientStop Color="White"/>
+                </LinearGradientBrush>
+            </Button.Background>
+
+        </Button>
+        <Button Content="7" HorizontalAlignment="Left" Height="60" Margin="10,280,0,0" VerticalAlignment="Top" Width="90" FontSize="24" FontFamily="Century Gothic">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3"/>
+                </Style>
+            </Button.Resources>
+
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE2DFDF" Offset="1"/>
+                    <GradientStop Color="White"/>
+                </LinearGradientBrush>
+            </Button.Background>
+
+        </Button>
+        <Button Content="8" HorizontalAlignment="Left" Height="60" Margin="105,280,0,0" VerticalAlignment="Top" Width="90" FontSize="24" FontFamily="Century Gothic">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3"/>
+                </Style>
+            </Button.Resources>
+
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE2DFDF" Offset="1"/>
+                    <GradientStop Color="White"/>
+                </LinearGradientBrush>
+            </Button.Background>
+
+        </Button>
+        <Button Content="9" HorizontalAlignment="Left" Height="60" Margin="200,280,0,0" VerticalAlignment="Top" Width="90" FontSize="24" FontFamily="Century Gothic">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3"/>
+                </Style>
+            </Button.Resources>
+
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE2DFDF" Offset="1"/>
+                    <GradientStop Color="White"/>
+                </LinearGradientBrush>
+            </Button.Background>
+
+        </Button>
+        <Button Content="*" HorizontalAlignment="Left" Height="60" Margin="295,280,0,0" VerticalAlignment="Top" Width="90" FontSize="24" FontFamily="Century Gothic">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3"/>
+                </Style>
+            </Button.Resources>
+
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE2DFDF" Offset="1"/>
+                    <GradientStop Color="White"/>
+                </LinearGradientBrush>
+            </Button.Background>
+
+        </Button>
+        <Button Content="0" HorizontalAlignment="Left" Height="60" Margin="10,345,0,0" VerticalAlignment="Top" Width="90" FontSize="24" FontFamily="Century Gothic">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3"/>
+                </Style>
+            </Button.Resources>
+
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE2DFDF" Offset="1"/>
+                    <GradientStop Color="White"/>
+                </LinearGradientBrush>
+            </Button.Background>
+
+        </Button>
+        <Button Content="," HorizontalAlignment="Left" Height="60" Margin="105,345,0,0" VerticalAlignment="Top" Width="90" FontSize="24" FontFamily="Century Gothic">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3"/>
+                </Style>
+            </Button.Resources>
+
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE2DFDF" Offset="1"/>
+                    <GradientStop Color="White"/>
+                </LinearGradientBrush>
+            </Button.Background>
+
+        </Button>
+        <Button Content="=" HorizontalAlignment="Left" Height="60" Margin="200,345,0,0" VerticalAlignment="Top" Width="90" FontSize="24" FontFamily="Century Gothic">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3"/>
+                </Style>
+            </Button.Resources>
+
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE2DFDF" Offset="1"/>
+                    <GradientStop Color="White"/>
+                </LinearGradientBrush>
+            </Button.Background>
+
+        </Button>
+        <Button Content="/" HorizontalAlignment="Left" Height="60" Margin="295,345,0,0" VerticalAlignment="Top" Width="90" FontSize="24" FontFamily="Century Gothic">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="3"/>
+                </Style>
+            </Button.Resources>
+
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE2DFDF" Offset="1"/>
+                    <GradientStop Color="White"/>
+                </LinearGradientBrush>
+            </Button.Background>
+
+        </Button>
+
+    </Grid>
+</Window>
